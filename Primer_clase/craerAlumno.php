@@ -9,10 +9,16 @@ $nombre = $_POST['nombre'];
 $edad = $_POST['edad'];
 $dni = $_POST['dni'];
 $legajo = $_POST['legajo'];	
+$path = $_POST['path'];	
 
 $miAlumno = new Alumno($nombre,$edad,$dni,$legajo);
 
 echo $miAlumno->retornarJson();
-//var_dump($miAlumno);
 
+$miAlumno->guardarArchivo($path);
+
+//$miAlumno->guardarJson($path);
+
+
+//var_dump($miAlumno);
 ?>
