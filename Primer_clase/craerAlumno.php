@@ -13,9 +13,11 @@ $path = $_POST['path'];
 
 $miAlumno = new Alumno($nombre,$edad,$dni,$legajo);
 
-echo $miAlumno->retornarJson();
+echo $nombre;
 
-$miAlumno->guardarArchivo($path);
+//echo $miAlumno->retornarJson();
+
+//$miAlumno->guardarArchivo($path);
 
 //$miAlumno->guardarJson($path);
 

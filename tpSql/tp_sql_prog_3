@@ -1,0 +1,79 @@
+3_1
+		SELECT * 
+		FROM Productos
+		ORDER BY pNombre;
+
+3_2
+		SELECT * 
+		FROM Proveedores
+		WHERE Localidad = 'Quilmes';
+
+3_3	
+		SELECT * 
+		FROM Envios
+		WHERE Cantidad BETWEEN 200 AND 300;
+
+3_4
+		SELECT COUNT(*)
+		FROM Envios;
+
+3_5	
+		SELECT pNumero
+		FROM Envios
+		LIMIT 3;
+
+3_6
+		SELECT prov.Nombre, prod.pNombre
+		FROM Proveedores as prov, Productos as prod, Envios as env
+		WHERE prov.Numero = env.Numero AND prod.pNumero = env.pNumero
+		order by prov.Nombre;
+
+3_7
+		SELECT env.Numero, env.pNumero, env.Cantidad, (prod.Precio * env.Cantidad) as Monto
+		FROM Productos as prod, Envios as env
+		WHERE prod.pNumero = env.pNumero;
+
+3_8
+		SELECT SUM(env.Cantidad) as Cantidad_Total
+		FROM Envios as env
+		WHERE env.pNumero = 1
+		AND env.Numero = 102;
+
+3_9
+		SELECT DISTINCT env.pNumero
+		FROM Productos as prod, Proveedores as prov, Envios as env
+		WHERE prov.Numero = env.Numero 
+		AND prov.Localidad = 'Avellaneda';
+
+3_10
+		SELECT `Domicilio`, `Localidad` 
+		FROM `Proveedores` 
+		WHERE Nombre LIKE '%I%';
+
+3_11
+		INSERT INTO `Productos`(`pNumero`, `pNombre`, `Precio`, `Tamaño`) 
+		VALUES (4,'Chocolate',25.35,'Chico');
+
+3_12
+		INSERT INTO `Proveedores`(`Numero`) VALUES (103);
+
+3_13
+		INSERT INTO `Proveedores`(`Numero`, `Nombre`, `Domicilio`, `Localidad`) 
+		VALUES (107,'Rosales',NULL,'La PLata');
+
+3_14
+		UPDATE `Productos` 
+		SET `Precio`= 97.50 
+		WHERE Tamaño = 'Grande';
+
+3_15
+		UPDATE `Productos`,`Envios`  
+		SET `Tamaño`="Mediano"
+		WHERE Envios.Cantidad >= 300 and Productos.pNumero = Envios.pNumero and Productos.Tamaño = "Chico";
+3_16
+		DELETE FROM `Productos` WHERE pNumero = 1;
+
+3_17
+		DELETE FROM `Proveedores` 
+		WHERE Proveedores.Numero 
+		not IN(SELECT DISTINCT Numero FROM `Envios`);
