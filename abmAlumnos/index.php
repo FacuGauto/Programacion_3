@@ -1,5 +1,5 @@
 <?php
-
+echo "AAAAAAAAAA";
 $dato = $_SERVER['REQUEST_METHOD'];
 
 if ($dato=="GET") 
