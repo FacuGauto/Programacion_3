@@ -1,0 +1,5 @@
+citroen,c3,ab3454,150000
+chevrolet,corsa,re4576,200000
+ford,fiesta,fd5323,120000
+citroen,fiesta,re3453,45000
+citroen,3cv,gow233,45000

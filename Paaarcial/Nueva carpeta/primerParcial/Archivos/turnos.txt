@@ -1,0 +1,3 @@
+fd5323,ford,fiesta,120000,30
+fd5323,ford,fiesta,120000,3
+re3453,citroen,fiesta,45000,6
