@@ -1,0 +1,9 @@
+chevrole,Prueba foto,ab3454,3000,ab3454-20190513-095443pm.jpg
+chevrolet,corsa,re4576,200000,sin foto
+ford,fiesta,fd5323,120000,sin foto
+citroen,fiesta,re3453,45000,sin foto
+citroen,3cv,gow233,45000,sin foto
+Peugeot,208,FGT458,250000,sin foto
+Peugeot,208,RET345,250000,sin foto
+Peugeot,208,RET346,250000,sin foto
+Peugeot,208,RET347,250000,sin foto
