@@ -1,0 +1,2 @@
+jamon,250,piedra,3,./Img/pizza2.jpg
+jamon,250,piedra,1,./Img/pizza2.jpg
