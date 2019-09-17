@@ -2,7 +2,7 @@
 //Archivo .json con array de objetos. Leo el archivo (jsondecode) y agrego al array array_push un nuevo objeto jsonencode
 $dato = $_SERVER['REQUEST_METHOD'];
 $array_personas = array();
-
+echo "AAAAAAAAAAAAAAA";
 
 if ($dato=="POST")
 {

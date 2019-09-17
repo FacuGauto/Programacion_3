@@ -12,7 +12,7 @@ class Alumno extends Persona
         $this->cuatrimestre = $cuatrimestre;
         $this->imagen = $imagen;
     }
-
+    
     static function datos()
     {
         return $this->nombre . "," . $this->dni . "," . $this->legajo . "," . $this->cuatrimestre;
